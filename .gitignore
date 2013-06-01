@@ -4,3 +4,15 @@ pom.xml
 /classes/
 /targets/
 .lein-deps-sum
+frontend/node_modules/
+frontend/node_modules
+frontend/node_modules/grunt
+frontend/node_modules/grunt-cli
+frontend/node_modules/grunt-contrib-concat
+frontend/node_modules/grunt-contrib-stylus
+frontend/node_modules/grunt-contrib-uglify
+frontend/node_modules/grunt-contrib-watch
+frontend/node_modules/grunt-s3
+frontend/node_modules/stylus
+frontend/grunt-aws.json
+frontend/grunt-aws.json

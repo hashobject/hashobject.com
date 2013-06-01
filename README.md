@@ -1,12 +1,17 @@
 #{hash:object}
 ==============
 
+HashObject Ltd official website (http://hashobject.com).
+
+Build with Clojure.
+
+
 LICENCE
 ==========
 
 (The MIT License)
 
-Copyright (c) 2013 #{hash:object}(team@hashobject.com)
+Copyright © 2013 HashObject Ltd (team@hashobject.com).
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the 'Software'), to deal
