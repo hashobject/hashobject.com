@@ -37,6 +37,14 @@ module.exports = function(grunt) {
           src: '../resources/public/css/app.css',
           dest: 'css/app.css',
           gzip: true
+        },
+        {
+          src: '../resources/public/google235235bcbf7ddb0d.html',
+          dest: 'google235235bcbf7ddb0d.html'
+        },
+        {
+          src: '../resources/public/robots.txt',
+          dest: 'robots.txt'
         }
       ]
     },
