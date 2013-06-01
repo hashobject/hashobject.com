@@ -4,7 +4,7 @@
 
 
 
-(defn intdex []
+(defn index []
   (html5 {:lang "en"}
     [:head
       [:meta {:charset "utf-8"}]
@@ -15,4 +15,4 @@
       [:meta {:name "description" :itemprop "description" :content "HashObject - software engineering, design and application development"}]
       [:title "HashObject: we love development"]
       (include-css "/css/app.css")]
-  )
+    [:body "Our site will be here soon..."]     ))

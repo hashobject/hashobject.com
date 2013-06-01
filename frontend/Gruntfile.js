@@ -28,7 +28,16 @@ module.exports = function(grunt) {
 
       // Files to be uploaded.
       upload: [
-
+        {
+          src: '../resources/public/index.html',
+          dest: 'index.html',
+          gzip: true
+        },
+        {
+          src: '../resources/public/css/app.css',
+          dest: 'css/app.css',
+          gzip: true
+        }
       ]
     },
 
