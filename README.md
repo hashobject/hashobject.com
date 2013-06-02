@@ -7,7 +7,7 @@ Build with Clojure.
 
 
 
-LICENCE
+## License
 ==========
 
 (The MIT License)
