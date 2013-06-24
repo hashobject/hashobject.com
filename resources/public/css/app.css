@@ -540,8 +540,12 @@ ul.icons li [class*=" icon-"] {
 .icon-github-alt:before           { content: "\f113"; }
 .icon-folder-close-alt:before     { content: "\f114"; }
 .icon-folder-open-alt:before      { content: "\f115"; }
+<<<<<<< HEAD
 html,body{height:100%}
 body{background:url("../images/landing-bg.jpg");color:#39434a;font-family:'PT Sans',Tahoma,sans-serif;font-size:18px;line-height:1.2;position:relative;text-align:center}
+=======
+body{background:url("/images/landing-bg.jpg");color:#39434a;font-family:'PT Sans',Tahoma,sans-serif;font-size:18px;line-height:1.2;text-align:center}
+>>>>>>> c93e097667392b47737e4834ba5e83cea10ec9c3
 a{color:#ed4d96;}
 a:visited{color:#9f0049}
 .button{border:none;box-shadow:none}
@@ -550,9 +554,14 @@ a:visited{color:#9f0049}
 #landing small{display:inline-block;font-size:14px;margin-bottom:25px}
 #landing p{margin-bottom:35px}
 #landing .big.button{height:130px;width:50%;}
+<<<<<<< HEAD
 #landing .big.button.twitter{background:#1ab7ea url("../images/twitter.png") center center no-repeat}
 #landing .big.button.github{background:#39434a url("../images/github.png") center center no-repeat}
 #landing .button-group>*{margin:0}
+=======
+#landing .big.button.twitter{background:#1ab7ea url("/images/twitter.png") center center no-repeat}
+#landing .big.button.github{background:#1ab7ea url("/images/twitter.png") center center no-repeat}
+>>>>>>> c93e097667392b47737e4834ba5e83cea10ec9c3
 .team{background:#eaeced;margin-bottom:35px;padding:25px 0;}
 .team div{display:inline-block;margin:0 20px;text-align:center;}
 .team div img{display:block;margin:0 auto 20px}
