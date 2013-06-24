@@ -2,12 +2,17 @@
 @import "foundation.min.css"
 @import "font-awesome.css"
 
+html, 
+body
+  height: 100%;
+
 body
   background: url('../images/landing-bg.jpg');
   color: #39434a;
   font-family: 'PT Sans', Tahoma, sans-serif;
   font-size: 18px;
   line-height: 1.2;
+  position: relative;
   text-align: center;
 
 a
@@ -41,7 +46,9 @@ a
     &.twitter
       background: #1ab7ea url("../images/twitter.png") center center no-repeat;
     &.github
-      background: #1ab7ea url("../images/twitter.png") center center no-repeat;
+      background: #39434a url("../images/github.png") center center no-repeat;
+  & .button-group>*
+    margin: 0;
 
 .team
   background: #eaeced;
@@ -56,3 +63,9 @@ a
       margin: 0 auto 20px;
   & .details
     font-size: 16px;
+
+.credentials
+  bottom: 5px;
+  font-size: 12px;
+  position: absolute;
+  right: 5px;
