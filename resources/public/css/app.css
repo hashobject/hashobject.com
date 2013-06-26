@@ -540,30 +540,32 @@ ul.icons li [class*=" icon-"] {
 .icon-github-alt:before           { content: "\f113"; }
 .icon-folder-close-alt:before     { content: "\f114"; }
 .icon-folder-open-alt:before      { content: "\f115"; }
-<<<<<<< HEAD
-html,body{height:100%}
-body{background:url("../images/landing-bg.jpg");color:#39434a;font-family:'PT Sans',Tahoma,sans-serif;font-size:18px;line-height:1.2;position:relative;text-align:center}
-=======
-body{background:url("/images/landing-bg.jpg");color:#39434a;font-family:'PT Sans',Tahoma,sans-serif;font-size:18px;line-height:1.2;text-align:center}
->>>>>>> c93e097667392b47737e4834ba5e83cea10ec9c3
+body{background:url("/images/landing-bg.jpg");color:#39434a;font-family:'PT Sans',Tahoma,sans-serif;font-size:14px;line-height:1.4;position:relative;text-align:center}
 a{color:#ed4d96;}
 a:visited{color:#9f0049}
 .button{border:none;box-shadow:none}
 .uppercase{text-transform:uppercase}
-#landing{background:#fff;box-shadow:0 0 3px 0 rgba(198,198,198,0.25);margin:0 auto;max-width:850px;padding:50px 0 0;text-align:center;}
-#landing small{display:inline-block;font-size:14px;margin-bottom:25px}
-#landing p{margin-bottom:35px}
-#landing .big.button{height:130px;width:50%;}
-<<<<<<< HEAD
-#landing .big.button.twitter{background:#1ab7ea url("../images/twitter.png") center center no-repeat}
-#landing .big.button.github{background:#39434a url("../images/github.png") center center no-repeat}
-#landing .button-group>*{margin:0}
-=======
+#landing{background:#fff;box-shadow:0 0 3px 0 rgba(198,198,198,0.25);margin:0 auto 50px;max-width:850px;padding:20px 0 0;position:relative;text-align:center;}
+#landing small{display:inline-block;font-size:12px;margin-bottom:15px}
+#landing p{line-height:1.4;margin-bottom:15px}
+#landing .big.button{height:90px;width:50%;}
 #landing .big.button.twitter{background:#1ab7ea url("/images/twitter.png") center center no-repeat}
-#landing .big.button.github{background:#1ab7ea url("/images/twitter.png") center center no-repeat}
->>>>>>> c93e097667392b47737e4834ba5e83cea10ec9c3
-.team{background:#eaeced;margin-bottom:35px;padding:25px 0;}
+#landing .big.button.github{background:#39434a url("/images/github.png") center center no-repeat}
+#landing .button-group>*{margin:0}
+.team{background:#eaeced;margin-bottom:15px;padding:25px 0 0;}
 .team div{display:inline-block;margin:0 20px;text-align:center;}
 .team div img{display:block;margin:0 auto 20px}
+.team .details{font-size:14px;margin-bottom:25px}
+.credentials{bottom:-45px;font-size:12px;position:absolute;right:5px}
+@media all and (min-width: 570px) and (max-height: 655px) and (max-width: 1008px){#landing .big.button{height:74px;}
+#landing .big.button.twitter{background-size:10%}
+#landing .big.button.github{background-size:10%}
+}@media all and (min-width: 570px) and (max-width: 1424px) and (max-height: 780px){#anton img,#maryna img{width:100px}
+}@media all and (min-width: 1445px){body{font-size:18px}
+#landing{padding:50px 0 0;}
+#landing p{margin-bottom:35px}
+#landing small{font-size:14px;margin-bottom:25px}
+#landing .big.button{height:130px}
+.team{margin-bottom:35px;}
 .team .details{font-size:16px}
-.credentials{bottom:5px;font-size:12px;position:absolute;right:5px}
+}
