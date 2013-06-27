@@ -55,6 +55,10 @@ module.exports = function(grunt) {
           src: '../resources/public/images/*.jpg',
           dest: 'images/',
           rel: '../resources/public/images'
+        },
+        {
+          src: '../resources/public/favicon.ico',
+          dest: 'favicon.ico'
         }
       ]
     },

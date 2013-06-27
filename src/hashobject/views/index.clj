@@ -23,6 +23,7 @@
       [:meta {:name "keywords" :itemprop "keywords" :content "HashObject, hashobject, #{hash:object}, HashObject Team, HashObject Ltd"}]
       [:meta {:name "description" :itemprop "description" :content "HashObject - software engineering, design and application development"}]
       [:title "HashObject: we love development"]
+      [:link {:rel "shortcut icon" :href "/favicon.ico"}]
       (include-css "/css/app.css")
       (ga)]
     [:body "Our site will be here soon..."]     ))
