@@ -1,6 +1,6 @@
 #{hash:object}
 
-HashObject Ltd official website (http://hashobject.com).
+Hashobject Ltd official website (http://hashobject.com).
 
 Build with Clojure.
 
@@ -14,7 +14,7 @@ We should use http://humanstxt.org/. In such format
 
 ## License
 
-Copyright © 2013 HashObject Ltd (team@hashobject.com).
+Copyright © 2013 hashobject ltd (team@hashobject.com).
 
 The use and distribution terms for this software are covered by the [Eclipse Public License 1.0](http://opensource.org/licenses/eclipse-1.0)
 which can be found in the file epl-v10.html at the root of this distribution.
