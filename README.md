@@ -1,6 +1,6 @@
-#{hash:object}
+hashobject.com
 
-Hashobject Ltd official website (http://hashobject.com).
+Hashobject team official website (http://hashobject.com).
 
 Build with Clojure.
 
