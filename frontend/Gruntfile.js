@@ -47,6 +47,10 @@ module.exports = function(grunt) {
           dest: 'robots.txt'
         },
         {
+          src: '../resources/public/humans.txt',
+          dest: 'humans.txt'
+        },
+        {
           src: '../resources/public/images/*.png',
           dest: 'images/',
           rel: '../resources/public/images'
