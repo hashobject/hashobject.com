@@ -2,9 +2,10 @@
 
 Hashobject team website (http://hashobject.com).
 
+
 Built with Clojure.
 
-[![Dependencies Status](http://jarkeeper.com/hashobject/hashobject.com/status.png)](http://jarkeeper.com/hashobject/hashobject.com)
+[![Dependencies Status](http://jarkeeper.com/hashobject/hashobject.com/status.svg)](http://jarkeeper.com/hashobject/hashobject.com)
 
 ## License
 
