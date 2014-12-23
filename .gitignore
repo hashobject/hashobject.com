@@ -4,12 +4,9 @@ pom.xml
 /classes/
 /targets/
 .lein-deps-sum
-frontend/node_modules/
-frontend/node_modules
-frontend/grunt-aws.json
-frontend/grunt-aws.json
-frontend/grunt-aws.json
-
+/node_modules/
+/node_modules
 *.DS_Store*
-
+aws.json
 resources/public/google235235bcbf7ddb0d.html
+.awspublish-hashobject.com
