@@ -13,6 +13,5 @@
     "type": "git",
     "url": "git://github.com/hashobject/hashobject.com.git"
   },
-  "author": "hashobject team (team@hashobject.com)",
-  "license": "MIT"
+  "author": "hashobject team (team@hashobject.com)"
 }
