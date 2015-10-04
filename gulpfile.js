@@ -7,8 +7,6 @@ var awspublish = require('gulp-awspublish');
 var aws = JSON.parse(fs.readFileSync('./aws.json'));
 
 
-
-
 gulp.task('deploy', function() {
 
   // create a new publisher
