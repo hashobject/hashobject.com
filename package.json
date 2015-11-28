@@ -5,8 +5,6 @@
   "private": true,
   "dependencies": {},
   "devDependencies": {
-    "gulp": "^3.8.10",
-    "gulp-awspublish": "0.0.23",
     "stylus": "~0.32.1"
   },
   "repository": {

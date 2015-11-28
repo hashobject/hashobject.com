@@ -9,7 +9,6 @@ Twitter: @m_aleksandrova
 
 
 /* SITE */
-Last update: 2014/12/23
+Last update: 2015/11/28
 Language: English
 Doctype: HTML5
-
