@@ -9,8 +9,8 @@
                   [org.martinklepsch/boot-gzip "0.1.2"]])
 
 (require '[io.perun :refer :all]
-         '[hashobject.views.index :as index-view]
          '[pandeiro.boot-http :refer [serve]]
+         '[hashobject.views.index :as index-view]
          '[hashobject.boot-s3 :refer :all]
          '[org.martinklepsch.boot-gzip :refer [gzip]])
 
@@ -27,18 +27,20 @@
 (deftask build-dev
   "Build blog dev version"
   []
-  (comp ;(base)
-        (dump-meta)        ))
+  (comp (collection :renderer 'hashobject.views.index/render
+                    :page     "index.html")
+        ))
 
 (deftask build
   "Build blog prod version."
   []
   (comp (build-dev)
+        (inject-scripts :scripts #{"ga.js"})
         (gzip :regex [#".html$" #".css$" #".js$"])
         (s3-sync)))
 
 (deftask dev
   []
   (comp (watch)
-        (build-dev)
+        ;(build-dev)
         (serve :resource-root "public")))

@@ -2,29 +2,54 @@
   (:use [hiccup.core :only (html)]
         [hiccup.page :only (html5 include-css include-js)]))
 
-
-(defn ga[]
-  [:script "(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-41533076-1', 'hashobject.com');
-  ga('send', 'pageview');"])
-
-
-(defn index []
+(defn render [context]
   (html5 {:lang "en"}
     [:head
-      [:meta {:charset "utf-8"}]
-      [:meta {:http-equiv "X-UA-Compatible" :content "IE=edge,chrome=1"}]
-      [:meta {:name "viewport" :content "width=device-width, initial-scale=1.0, user-scalable=no"}]
-      [:meta {:itemprop "author" :name "author" :content "hashobject team (team@hashobject.com)"}]
-      [:meta {:name "keywords" :itemprop "keywords" :content "hashobject, #{hash:object}, hashobject team, hashobject ltd"}]
-      [:meta {:name "description" :itemprop "description" :content "Hashobject - software engineering, design and application development"}]
-      [:title "HashObject: we love development"]
-      [:link {:rel "shortcut icon" :href "/favicon.ico"}]
-      [:link {:rel "author" :href "humans.txt"}]
-      (include-css "/css/app.css")
-      (ga)]
-    [:body "Our site will be here soon..."]     ))
+     [:meta {:charset "utf-8"}]
+     [:meta {:content "IE=edge,chrome=1", :http-equiv "X-UA-Compatible"}]
+     [:meta {:content "width=device-width, initial-scale=1.0, user-scalable=no", :name "viewport"}]
+     [:meta {:content "Hashobject (team@hashobject.com)", :itemprop "author", :name "author"}]
+     [:meta {:content "hashobject, hashobject team, hashobject ltd", :itemprop "keywords", :name "keywords"}]
+     [:meta {:content "Hashobject - software engineering, design and application development", :itemprop "description", :name "description"}]
+     [:title "Hashobject: we love development"]
+     [:link {:href "/favicon.png", :rel "icon", :type "image/png"}]
+     [:link {:rel "author", :href "humans.txt"}]
+     [:link {:href "https://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic", :rel "stylesheet", :type "text/css"}]
+     (include-css "/css/app.css")]
+   [:body
+    [:img {:class "logo", :src "/images/hashobject-logo.svg"}]
+    [:div {:id "landing"}
+     [:p "Hi there:)"
+      [:br]
+      [:span "Hashobject"] " is a team of 2 people:"]
+     [:section {:class "team"}
+      [:div {:id "anton"}
+       [:img {:src "/images/anton.png"}]
+       [:div {:class "details"}
+        [:strong {:class "uppercase"}
+         [:a {:href "https://twitter.com/podviaznikov"} "Anton Podviaznikov"] ]
+        [:br] "\n            Full-stack developer\n          "] ]
+      [:div {:id "maryna"}
+       [:img {:src "/images/maryna.png"}]
+       [:div {:class "details"}
+        [:strong {:class "uppercase"}
+         [:a {:href "https://twitter.com/m_aleksandrova"} "Maryna Aleksandrova"] ]
+        [:br] ] ] ]
+     [:p "We are still trying to figure out what to put on our website,"
+      [:br] "\n      so ... better check out our blog at "
+      [:a {:href "http://blog.hashobject.com/"} "blog.hashobject.com"]
+      [:br] "\n        or "
+      [:a {:href "http://code.hashobject.com/"} "open source corner"] " with Clojure libraries."
+      [:br] "\n      or start following us on "
+      [:span {:class "uppercase"} "Twitter"] " or "
+      [:span {:class "uppercase"} "GitHub"] "."
+      [:br] "\n      If you need help with design or development send us and "
+      [:a {:href "mailto:team@hashobject.com"} "email"]]
+     [:div {:class "button-group"}
+      [:a {:class "twitter big button", :href "https://twitter.com/hashobject"}]
+      [:a {:class "github big button", :href "https://github.com/hashobject"}] ]
+     [:div {:class "credentials"} "Background image is by "
+      [:a {:href "http://doctype.me/", :target "_blank"} "Aleks Dorohovich"] ", found on "
+      [:a {:href "http://unsplash.com/", :target "_blank"} "unsplash.com"]]
+      ]]
+     ))
