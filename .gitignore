@@ -10,3 +10,5 @@ pom.xml
 aws.json
 resources/public/google235235bcbf7ddb0d.html
 .awspublish-hashobject.com
+/target
+/target/
