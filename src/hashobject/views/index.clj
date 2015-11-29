@@ -28,22 +28,22 @@
        [:div {:class "details"}
         [:strong {:class "uppercase"}
          [:a {:href "https://twitter.com/podviaznikov"} "Anton Podviaznikov"] ]
-        [:br] "\n            Full-stack developer\n          "] ]
+        [:br] "Full-stack developer"] ]
       [:div {:id "maryna"}
        [:img {:src "/images/maryna.png"}]
        [:div {:class "details"}
         [:strong {:class "uppercase"}
          [:a {:href "https://twitter.com/m_aleksandrova"} "Maryna Aleksandrova"] ]
-        [:br] ] ] ]
+        [:br] "Designer"] ] ]
      [:p "We are still trying to figure out what to put on our website,"
-      [:br] "\n      so ... better check out our blog at "
+      [:br] "so ... better check out our blog at "
       [:a {:href "http://blog.hashobject.com/"} "blog.hashobject.com"]
-      [:br] "\n        or "
+      [:br] "or "
       [:a {:href "http://code.hashobject.com/"} "open source corner"] " with Clojure libraries."
-      [:br] "\n      or start following us on "
+      [:br] "or start following us on "
       [:span {:class "uppercase"} "Twitter"] " or "
       [:span {:class "uppercase"} "GitHub"] "."
-      [:br] "\n      If you need help with design or development send us and "
+      [:br] "If you need help with design or development send us and "
       [:a {:href "mailto:team@hashobject.com"} "email"]]
      [:div {:class "button-group"}
       [:a {:class "twitter big button", :href "https://twitter.com/hashobject"}]
