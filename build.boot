@@ -27,9 +27,8 @@
 (deftask build-dev
   "Build blog dev version"
   []
-  (comp (collection :renderer 'hashobject.views.index/render
-                    :page     "index.html")
-        ))
+  (comp (markdown)
+        (collection :renderer 'hashobject.views.index/render :page "index.html")))
 
 (deftask build
   "Build blog prod version."
@@ -42,5 +41,5 @@
 (deftask dev
   []
   (comp (watch)
-        ;(build-dev)
+        (build-dev)
         (serve :resource-root "public")))
